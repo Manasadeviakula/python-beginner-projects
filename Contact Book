@@ -1,0 +1,22 @@
+# PROJECT: Contact Book
+# DESCRIPTION: Store and search contacts
+
+contacts = {}
+
+while True:
+    print("\n1.Add 2.Search 3.View 4.Exit")
+    choice = input("Choice: ")
+
+    if choice == "1":
+        name = input("Name: ")
+        phone = input("Phone: ")
+        contacts[name] = phone
+
+    elif choice == "2":
+        print(contacts.get(input("Name: "), "Not found"))
+
+    elif choice == "3":
+        print(contacts)
+
+    elif choice == "4":
+        break
