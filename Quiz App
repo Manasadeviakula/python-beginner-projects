@@ -1,0 +1,16 @@
+# PROJECT: Quiz App
+# DESCRIPTION: Simple multiple choice quiz
+
+questions = {
+    "Capital of India?": "delhi",
+    "5 + 5?": "10",
+    "Python creator?": "guido"
+}
+
+score = 0
+
+for q, ans in questions.items():
+    if input(q + " ").lower() == ans:
+        score += 1
+
+print("Score:", score)
