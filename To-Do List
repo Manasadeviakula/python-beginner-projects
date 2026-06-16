@@ -1,0 +1,21 @@
+# PROJECT: To-Do List
+# DESCRIPTION: Stores tasks in memory
+
+tasks = []
+
+while True:
+    print("\n1.Add 2.View 3.Delete 4.Exit")
+    choice = input("Choice: ")
+
+    if choice == "1":
+        tasks.append(input("Task: "))
+
+    elif choice == "2":
+        for i, t in enumerate(tasks, 1):
+            print(i, t)
+
+    elif choice == "3":
+        tasks.pop(int(input("Task number: ")) - 1)
+
+    elif choice == "4":
+        break
