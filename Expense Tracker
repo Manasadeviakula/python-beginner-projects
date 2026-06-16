@@ -1,0 +1,20 @@
+# PROJECT: Expense Tracker
+# DESCRIPTION: Tracks expenses and total spending
+
+expenses = []
+
+while True:
+    print("\n1.Add 2.View 3.Total 4.Exit")
+    choice = input("Choice: ")
+
+    if choice == "1":
+        expenses.append(float(input("Amount: ")))
+
+    elif choice == "2":
+        print(expenses)
+
+    elif choice == "3":
+        print("Total:", sum(expenses))
+
+    elif choice == "4":
+        break
